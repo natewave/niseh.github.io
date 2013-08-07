@@ -15,19 +15,20 @@
   </head>
   <body>
     <div class="main">
-        <div class="welcome">
+        <div class="welcome" id="radio-signal">
             <p><strong>Hi and welcome to my park place.</strong></p>
             <p>I'm not sure why you are here, but if you think you have a reason,<em> <a href="https://gist.github.com/niseh/6172358">here's how to contact me</a>.</em></p>
             <p>
             Please note I cannot consider emails unless they are submitted in handwritting. I also don't respond in anything but handwritting. There are several reasons for this, but the most reasonable one is that I like making people do unnecessary and flippant things. And forcing emails to be handwritten is way too unnecessary for me to pass up, oh can't you see that!</p>
             <p>Anyway, it is a pleasure to see you passing by this little park place.</p>
-            <p>- S. Nizar</p>
+            <div id="signature"<qzé'è'></div>
         </div>
     </div>
     <div class="footer">
-      Copyright © 2013 S. Nizar
+      <p>Copyright © 2013 S. Nizar</p>
     </div>
 
+    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -37,6 +38,18 @@
       ga('create', 'UA-43018957-1', 'morningpotion.com');
       ga('send', 'pageview');
 
+    </script>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/radio-signal.js"></script>
+    <script>
+      $(function() {
+        $("#signature").RadioSignal({
+          imageWidth: 62,
+          imageHeight: 20,
+          image: "images/signature.png"
+        });
+      });
     </script>
   </body>
 </html>
